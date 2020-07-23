@@ -3,7 +3,6 @@ import javax.swing.*;
 public class MainGUI implements Cloneable{
 
     public static MainGUI mainGUI;
-    public static MainGUI firstPage;
 
     public static MainGUI getInstance() {
         if(mainGUI==null)
@@ -11,14 +10,15 @@ public class MainGUI implements Cloneable{
         return mainGUI;
     }
     JFrame frame;
+    JButton back;
+
 
     public MainGUI() {
 
         mainGUI=this;
 
         frame=new JFrame("Crypto in Java");
-
-        frame.setSize(Proportions.width,Proportions.height);
+        frame.setSize(Layout.width, Layout.height);
 
         new CipherGUI("MD5").show();
         new CipherGUI("Caesar").show();
@@ -26,19 +26,31 @@ public class MainGUI implements Cloneable{
 
         frame.setLayout(null);
         frame.setVisible(true);
-        try {
-            firstPage = (MainGUI) clone();
-        }
-        catch (Exception e)
-        { }
+
+        back=new JButton("Back");
+        back.setBounds(5, Layout.height-2* Layout.elementHeight-15, Layout.width, Layout.elementHeight);
+
+        back.addActionListener(
+                e->firstPage()
+        );
+
     }
 
-    public void resetFrame()
+    public void firstPage()
+    {
+        frame.getContentPane().removeAll();
+        for(CipherGUI cipher:CipherGUI.ciphers )
+            frame.add(cipher.chooseMe);
+        frame.repaint();
+    }
+
+    public void secondPage()
     {
         for(CipherGUI cipher:CipherGUI.ciphers )
             frame.remove(cipher.chooseMe);
         frame.add(CipherGUI.encrypt);
         frame.add(CipherGUI.ta);
+        frame.add(back);
         frame.repaint();
     }
 

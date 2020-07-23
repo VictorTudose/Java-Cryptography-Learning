@@ -33,8 +33,8 @@ public class CaesarCipher extends Cipher {
         submit=new JButton("Choose this key");
         keyField=new JTextField();
 
-        submit.setBounds(5,5+Proportions.elementHeight+5,Proportions.width/2-25,Proportions.elementHeight);
-        keyField.setBounds(5+Proportions.width/2,5+Proportions.elementHeight+5, Proportions.width/2-25,Proportions.elementHeight);
+        submit.setBounds(Layout.firstHalfSlot(1));
+        keyField.setBounds(Layout.secondHalfSlot(1));
 
         try {
             submit.addActionListener(e -> key = Integer.parseInt(keyField.getText()));

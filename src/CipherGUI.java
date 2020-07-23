@@ -1,6 +1,3 @@
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.*;
 
@@ -22,8 +19,8 @@ public class CipherGUI {
         encrypt=new JButton("Encrypt");
         ta=new JTextArea();
 
-        encrypt.setBounds(5,5,Proportions.width-25,Proportions.elementHeight);
-        ta.setBounds(5,5+3*Proportions.elementHeight,Proportions.width,Proportions.height/2);
+        encrypt.setBounds(5,5, Layout.width-25, Layout.elementHeight);
+        ta.setBounds(5,5+3* Layout.elementHeight, Layout.width, Layout.height/2);
 
         encrypt.addActionListener(
                 e -> {
@@ -38,13 +35,13 @@ public class CipherGUI {
     public CipherGUI(String name) {
         this.name=name;
         chooseMe=new JButton(name);
-        chooseMe.setBounds(Proportions.listOffsetX,Proportions.listOffsetY+40*count,Proportions.width-25,Proportions.elementHeight);
+        chooseMe.setBounds(Layout.fullSlot(count));
         count++;
 
         this.chooseMe.addActionListener(
                 e -> {
                     selected=name;
-                    MainGUI.mainGUI.resetFrame();
+                    MainGUI.mainGUI.secondPage();
                     cipher=Cipher.getCipher(selected);
                     cipher.load(MainGUI.getInstance().frame);
                 }

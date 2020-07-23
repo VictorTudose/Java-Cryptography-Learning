@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class MainWindow {
+public class Layout {
 
     public static int width=840;
     public static int height=810;
