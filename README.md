@@ -29,12 +29,12 @@ MainGUI structure
 
 ## TODO
 
--[ ] Add more ciphers 
--[ ] Refactor the Layout
-    -[ ] Make it statefull
-        -[ ] Implement tabs
-    -[ ] Make it responsive
-    -[ ] Load from XML file
--[ ] Add text functionality
-    -[ ] Random text generator
-    -[ ] Frequency analysis
+- [ ] Add more ciphers 
+- [ ] Refactor the Layout
+    - [ ] Make it statefull
+        - [ ] Implement tabs
+    - [ ] Make it responsive
+    - [ ] Load from XML file
+- [ ] Add text functionality
+    - [ ] Random text generator
+    - [ ] Frequency analysis
