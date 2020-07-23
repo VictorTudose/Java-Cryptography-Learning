@@ -20,9 +20,21 @@ Classes :
 * Cipher
 	* Caesar
 	* MD5Cipher
-	* DummyCipher ```does nothign```
+	* DummyCipher ```does nothing```
 
 MainGUI structure
 * first page ``` selection page ```
 * second page ``` execution page ```
 	* has a back button
+
+## TODO
+
+-[ ] Add more ciphers 
+-[ ] Refactor the Layout
+    -[ ] Make it statefull
+        -[ ] Implement tabs
+    -[ ] Make it responsive
+    -[ ] Load from XML file
+-[ ] Add text functionality
+    -[ ] Random text generator
+    -[ ] Frequency analysis
