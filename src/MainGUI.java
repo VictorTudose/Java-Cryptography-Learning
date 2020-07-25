@@ -1,4 +1,7 @@
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
 
 public class MainGUI implements Cloneable{
 
@@ -9,9 +12,17 @@ public class MainGUI implements Cloneable{
             mainGUI=new MainGUI();
         return mainGUI;
     }
-    JFrame frame;
-    JButton back;
+    private JFrame frame;
+    private JButton back;
 
+    public JFrame getFrame() {
+        return frame;
+    }
+
+    public Rectangle getSize()
+    {
+        return frame.getBounds();
+    }
 
     public MainGUI() {
 
@@ -28,11 +39,18 @@ public class MainGUI implements Cloneable{
         frame.setVisible(true);
 
         back=new JButton("Back");
-        back.setBounds(5, Layout.height-2* Layout.elementHeight-15, Layout.width, Layout.elementHeight);
+        back.setBounds(Layout.revFullSlot(0));
 
         back.addActionListener(
                 e->firstPage()
         );
+
+        frame.addComponentListener(new ComponentAdapter() {
+            public void componentResized(ComponentEvent componentEvent) {
+                Layout.update();
+            }
+        });
+
 
     }
 

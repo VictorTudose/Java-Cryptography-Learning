@@ -19,8 +19,8 @@ public class CipherGUI {
         encrypt=new JButton("Encrypt");
         ta=new JTextArea();
 
-        encrypt.setBounds(5,5, Layout.width-25, Layout.elementHeight);
-        ta.setBounds(5,5+3* Layout.elementHeight, Layout.width, Layout.height/2);
+        encrypt.setBounds(Layout.fullSlot(0));
+        ta.setBounds(Layout.multiSlot(2,4));
 
         encrypt.addActionListener(
                 e -> {
@@ -43,7 +43,7 @@ public class CipherGUI {
                     selected=name;
                     MainGUI.mainGUI.secondPage();
                     cipher=Cipher.getCipher(selected);
-                    cipher.load(MainGUI.getInstance().frame);
+                    cipher.load(MainGUI.getInstance().getFrame());
                 }
         );
 
@@ -53,7 +53,7 @@ public class CipherGUI {
 
     public void show()
     {
-        MainGUI.mainGUI.frame.add(chooseMe);
+        MainGUI.mainGUI.getFrame().add(chooseMe);
     }
 
 }
