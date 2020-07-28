@@ -34,6 +34,7 @@ public class MainGUI implements Cloneable{
         new CipherGUI("MD5").show();
         new CipherGUI("Caesar").show();
         new CipherGUI("XOR").show();
+        new CipherGUI("RailFence").show();
         new CipherGUI("Nothing").show();
 
         frame.setLayout(null);
@@ -43,7 +44,10 @@ public class MainGUI implements Cloneable{
         back.setBounds(Layout.revFullSlot(0));
 
         back.addActionListener(
-                e->firstPage()
+                e->{
+                    firstPage();
+                    CipherGUI.clearText();
+                }
         );
 
         frame.addComponentListener(new ComponentAdapter() {

@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b5fbe1-f645-429c-917f-d91f5f2d177d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/NumCipher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RailFenceCipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/CaesarCipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/CaesarCipher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/Cipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/Cipher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/Layout$Tab.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/Layout$Tab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/Layout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/Layout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/CipherGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/CipherGUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/MainGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/MainGUI$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/MainGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/XORCipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Cryptography-Learning/XORCipher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CaesarCipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CipherGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CipherGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XORCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XORCipher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,30 +88,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="177" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1595438593004" />
-    <state x="765" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1595957042740">
+    <state x="765" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1595957666100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595957042740" />
-    <state width="1921" height="289" key="GridCell.Tab.0.bottom" timestamp="1595957199183">
+    <state x="765" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595957666100" />
+    <state width="1921" height="289" key="GridCell.Tab.0.bottom" timestamp="1595957930281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595957199183" />
-    <state width="1921" height="289" key="GridCell.Tab.0.center" timestamp="1595957199182">
+    <state width="1921" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595957930281" />
+    <state width="1921" height="289" key="GridCell.Tab.0.center" timestamp="1595957930280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595957199182" />
-    <state width="1921" height="289" key="GridCell.Tab.0.left" timestamp="1595957199182">
+    <state width="1921" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595957930280" />
+    <state width="1921" height="289" key="GridCell.Tab.0.left" timestamp="1595957930280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595957199182" />
-    <state width="1921" height="289" key="GridCell.Tab.0.right" timestamp="1595957199183">
+    <state width="1921" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595957930280" />
+    <state width="1921" height="289" key="GridCell.Tab.0.right" timestamp="1595957930281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595957199183" />
-    <state x="655" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1595956686812">
+    <state width="1921" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595957930281" />
+    <state x="655" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1595957373467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595956686812" />
+    <state x="655" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595957373467" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1595680933107">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -18,6 +18,9 @@ public abstract class Cipher {
         ciphers.put("MD5",new MD5Cipher());
         ciphers.put("Caesar",new CaesarCipher());
         ciphers.put("XOR",new XORCipher());
+        ciphers.put("RailFence",new RailFenceCipher());
+
+
     }
     public abstract String encrypt(String string);
     public abstract void load(JFrame frame);

@@ -32,6 +32,11 @@ public class CipherGUI {
         ciphers=new ArrayList<>();
     }
 
+    public static void clearText()
+    {
+        ta.setText("");
+    }
+
     public CipherGUI(String name) {
         this.name=name;
         chooseMe=new JButton(name);
