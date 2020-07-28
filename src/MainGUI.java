@@ -33,6 +33,7 @@ public class MainGUI implements Cloneable{
 
         new CipherGUI("MD5").show();
         new CipherGUI("Caesar").show();
+        new CipherGUI("XOR").show();
         new CipherGUI("Nothing").show();
 
         frame.setLayout(null);

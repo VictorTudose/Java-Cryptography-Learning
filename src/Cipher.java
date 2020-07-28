@@ -17,6 +17,7 @@ public abstract class Cipher {
         ciphers=new HashMap<>();
         ciphers.put("MD5",new MD5Cipher());
         ciphers.put("Caesar",new CaesarCipher());
+        ciphers.put("XOR",new XORCipher());
     }
     public abstract String encrypt(String string);
     public abstract void load(JFrame frame);
